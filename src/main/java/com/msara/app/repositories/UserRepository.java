@@ -1,12 +1,14 @@
 package com.msara.app.repositories;
 
-import com.msara.app.model.entities.User;
+import com.msara.app.model.entities.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+import java.util.Optional;
 
-    User findUserByDocument(String document);
-    User findUserByEmail(String email);
+@Repository
+public interface UserRepository extends JpaRepository<UserEntity, Long> {
+
+    UserEntity findUserByDocument(String document);
+    UserEntity findUserByEmail(String email);
 }

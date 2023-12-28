@@ -13,3 +13,10 @@ spring:
         properties:
             hibernate:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
+
+# JWT
+jwt:
+    secret:
+        key: Kf57gXg92rf2U2QoA4++rP2koi9++ozd605nsgOrmbRn6XhcDKaT7ZxJw5xyIpyzMIy2gE0LMjX5nmDPPQWVj6XyiAqHKLZcuQjYij0Hz79xsYAvMvWVxUzhmM9unDJ0hPlwp8O8xiu7L4SWs+XbS8ISndjLvdPFU2DeMe5mQoWG3TwxzX2nCv89mvbeD0WX4YJ45ZZSsXr1A16aiBCYVfjYfQXeenF/fDi9XbiHVIi6DH2RBfNlXdgWnLr6b5aZJxxNVwZowXeB8EhgXOM6ZILnp8R3Xmf0Oo5h0XEQ6ULZcXxbmDj+PMZajx2pdHIPgPNjVpBJFYEJkcClghxDTwzQuBG2iq6qwtlJSelxTQI=
+    time:
+        expiration: 86400000

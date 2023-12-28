@@ -1,7 +1,6 @@
 package com.msara.app.controllers;
 
 import com.msara.app.model.dto.UserRequestDTO;
-import com.msara.app.repositories.RoleRepository;
 import com.msara.app.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +16,7 @@ public class UserController {
 
     private final UserService userService;
 
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<String> addUser(@RequestBody UserRequestDTO userRequestDTO) {
         this.userService.addUser(userRequestDTO);
         return ResponseEntity.ok("User added successfully");
